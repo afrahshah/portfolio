@@ -2,10 +2,35 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import { getDocs, collection } from 'firebase/firestore';
-import { db } from '../../firebase';
 
-const Portfolio = () => { 
+const dummyProjects = [
+    {
+        name: "Project One",
+        description: "A web application for managing tasks and projects.",
+        image: "https://via.placeholder.com/600x400?text=Project+One",
+        url: "https://example.com/project-one"
+    },
+    {
+        name: "Project Two",
+        description: "An e-commerce platform with a full shopping cart experience.",
+        image: "https://via.placeholder.com/600x400?text=Project+Two",
+        url: "https://example.com/project-two"
+    },
+    {
+        name: "Project Three",
+        description: "A machine learning model for predicting stock prices.",
+        image: "https://via.placeholder.com/600x400?text=Project+Three",
+        url: "https://example.com/project-three"
+    },
+    {
+        name: "Project Four",
+        description: "A responsive website for a local business.",
+        image: "https://via.placeholder.com/600x400?text=Project+Four",
+        url: "https://example.com/project-four"
+    }
+];
+
+const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [portfolio, setPortfolio] = useState([]);
 
@@ -17,15 +42,15 @@ const Portfolio = () => {
         return () => {
             clearTimeout(timer);
         }
-    });
+    }, []);
 
     useEffect(() => {
         getPortfolio();
     }, []);
 
-    const getPortfolio = async () => {
-        const querySnapshot = await getDocs(collection(db, 'portfolio'));
-        setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+    const getPortfolio = () => {
+        // Directly use the dummy projects instead of fetching from Firebase
+        setPortfolio(dummyProjects);
     }
 
     const renderPortfolio = (portfolio) => {
@@ -38,13 +63,13 @@ const Portfolio = () => {
                                 <img 
                                 src={port.image}
                                 className="portfolio-image"
-                                alt="portfolio" />
+                                alt={port.name} />
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
                                     <button
                                         className="btn"
-                                        onClick={() => window.open(port.url)}
+                                        onClick={() => window.open(port.url, "_blank")}
                                     >View</button>
                                 </div>
                             </div>
@@ -54,7 +79,6 @@ const Portfolio = () => {
             </div>
         );
     }
-
 
     return (
         <>
