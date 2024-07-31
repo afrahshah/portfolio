@@ -1,0 +1,22 @@
+* [33me80caf3[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m, [m[1;32mmain[m[33m)[m Initial commit
+* [33mff37392[m Optmized for mobile devices
+*   [33ma01ea01[m Merge pull request #11 from KaanAlboy/alboys-branch
+[32m|[m[33m\[m  
+[32m|[m * [33mbea4240[m anchor icon coloring on hover
+[32m|[m * [33mbf03d4f[m some suggestions about texts :)
+* [33m|[m   [33m4cf7bd8[m Merge pull request #10 from pwong09/patch-1
+[34m|[m[35m\[m [33m\[m  
+[34m|[m * [33m|[m [33m39cd891[m shows all 6 sides rotating
+[34m|[m [33m|[m[33m/[m  
+* [33m/[m [33m24bfb64[m added portfolio dashboard
+[33m|[m[33m/[m  
+* [33mb6f1faf[m Implemented portfolio section
+*   [33m4079132[m Merge pull request #1 from santicna/master
+[36m|[m[1;31m\[m  
+[36m|[m * [33m04aa7aa[m fontawesome-svg-core and leaflet dependencies
+[36m|[m[36m/[m  
+* [33m57d5b8e[m Update README.md
+* [33mc606ccc[m Added contact page
+* [33m5464368[m Initialize project using Create React App
+* [33m06cd7e2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mclean-up[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/clean-up[m[33m)[m Add files via upload
+* [33mee792f9[m Initial commit

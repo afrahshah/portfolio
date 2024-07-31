@@ -1,0 +1,28 @@
+// src/components/Resume/Resume.scss
+.resume {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    border: 2px solid yellow; /* Yellow outline */
+    background-color: transparent; /* Transparent background */
+    color: yellow; /* Yellow text */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+   
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: yellow; /* Yellow background on hover */
+    color: maroon; /* Maroon text on hover */
+    border-color: yellow; /* Ensure border remains yellow on hover */
+    cursor: url('../../cursor2.png'), pointer; /* Custom cursor */
+  }
+  

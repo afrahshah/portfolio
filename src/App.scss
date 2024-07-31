@@ -1,9 +1,21 @@
 //$primary-color: #8d7152;
 //$primary-color: #FFD1DC;
 $primary-color: #FFD700;
-
-@import 'animate.css';
+/*  @import '~@assets/images/cursor1.png'; 
+ */@import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
+html {
+  scroll-behavior: smooth;
+}
+@import '~animate.css/animate.css';
+
+.App {
+  cursor: url(cursor1.png), auto;
+  
+}
+a{
+  cursor: url(cursor2.png),pointer;
+}
 
 @font-face {
   font-family: 'Helvetica Neue';
@@ -49,4 +61,12 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+}
+
+
+
+.pls{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
